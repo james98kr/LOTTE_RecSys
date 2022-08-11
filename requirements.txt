@@ -1,0 +1,6 @@
+pandas
+tensorboard
+pyyaml
+munch
+tabulate
+colorama

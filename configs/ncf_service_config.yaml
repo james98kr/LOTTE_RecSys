@@ -1,0 +1,11 @@
+CUST_NUM: 26917
+SERV_NUM: 8808
+FEATURE_NUM: 32
+NUM_LAYERS: 3
+DROPOUT_RATE: 0.2
+LR: 0.001
+EPOCH: 100
+CREATE_MATRIX: False
+PATH: /home/james/lotte/
+SAVED_MODEL_TO_TEST: /home/james/lotte/save/ncf_service.pth
+EXPNUM: 1

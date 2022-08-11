@@ -1,0 +1,9 @@
+CUST_NUM: 26917
+PROD_NUM: 1933
+SERV_NUM: 8808
+FEATURE_NUM: 32
+NUM_LAYERS: 3
+DROPOUT_RATE: 0.2
+PATH: /home/james/lotte/
+NCF_PRODUCT_MODEL: /home/james/lotte/save/ncf_product.pth
+NCF_SERVICE_MODEL: /home/james/lotte/save/ncf_service.pth
