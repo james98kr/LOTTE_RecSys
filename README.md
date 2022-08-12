@@ -139,3 +139,7 @@ There are three arguments in this command:
 * customer (required): You MUST pass the customer ID as argument. Otherwise, the model will return an error.
 * month (optional): You can pass the month as an integer (e.g. 10 for October, 3 for March). If you don't pass the month argument, the system will automatically fill in the month based on the current date. 
 * recnum (optional): You can pass the length of the recommendation list. By default, it is set to 50. If you want a shorter recommendation list, you can manually reduce this number. 
+
+## Data Visualization
+
+You may refer to the ``./data/data_visualization.ipynb`` file for the code used for data visualization.
