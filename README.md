@@ -84,6 +84,28 @@ python ncf_service_train.py ./configs/ncf_service_config.yaml
 ```
 This will create a ``ncf_service.pth`` model file under the ``./save`` directory. 
 
+## Tensorboard
+
+The two files for training the two models automatically saves a Tensorboard log of the average loss while training. You first set the experiment number in the ``./configs/ncf_product_config.yaml`` and ``./configs/ncf_service_config.yaml`` file, in line 11. It would be preferred if you use a different experiment number for each time you train the model, so that it would be easier to keep track of the logs.
+
+After training, there will be two Tensorboard log files created under the following directory:
+```
+./tensorboard/ncf_product/exp{exp_num_in_config}
+./tensorboard/ncf_service/exp{exp_num_in_config}
+```
+If you would like to see the logs, use the following commands:
+
+1\) For NCF_Product:
+```
+cd tensorboard/ncf_product
+tensorboard --logdir exp{exp_num_in_config}
+```
+2\) For NCF_Product:
+```
+cd tensorboard/ncf_service
+tensorboard --logdir exp{exp_num_in_config}
+```
+
 ## Testing the NCF Models
 
 After training the two NCF models and saving the ``.pth`` files, you can test the performance of the models through the following steps. 10% of all the data in the customer-product matrix as well as the customer-service matrix are used as the test(validation) set in this step. 
